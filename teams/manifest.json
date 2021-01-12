@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "version": "1.0.2",
+  "id": "8f8bf076-c93d-4e7e-88a7-ff60c489c06f",
+  "packageName": "com.onmicrosoft.contoso.spfx-meetings",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://contoso.com",
+    "privacyUrl": "https://contoso.com/privacy",
+    "termsOfUseUrl": "https://contoso.com/tos"
+  },
+  "icons": {
+    "color": "111951e7-ceb0-4c7b-8f9a-3c4f8991715e_color.png",
+    "outline": "111951e7-ceb0-4c7b-8f9a-3c4f8991715e_outline.png"
+  },
+  "name": {
+    "short": "SPFx Meetings",
+    "full": "SPFx Meetings"
+  },
+  "description": {
+    "short": "SPFx Meetings",
+    "full": "SPFx Meetings"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=111951e7-ceb0-4c7b-8f9a-3c4f8991715e%26forceLocale={locale}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}
