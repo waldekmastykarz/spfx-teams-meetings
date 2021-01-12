@@ -37,3 +37,7 @@ Solution to repro the issue with using SharePoint Framework solutions as Teams m
 
         {"hostType":"Teams","webPartDataAsJson":"{\"dataVersion\":\"1.0\",\"description\":\"HelloWorld description\",\"id\":\"111951e7-ceb0-4c7b-8f9a-3c4f8991715e\",\"properties\":{\"description\":\"HelloWorld\"},\"instanceId\":\"b1db25f6-6181-4e51-8347-205d9cef6159\",\"title\":\"HelloWorld\"}"}
         ```
+
+## Support in SPFx
+
+When building meetings app in SPFx, it would be helpful to expose the [meetings context information](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/create-apps-for-teams-meetings?tabs=dotnet#meeting-apps-api-reference) through SPFx to use the existing infrastructure (permission requests and service principal to connect to Graph) to simplify the process of building these apps and not require server-side components like bots.
