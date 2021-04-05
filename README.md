@@ -6,8 +6,8 @@ Solution to repro the issue with using SharePoint Framework solutions as Teams m
 
 ## Prerequisites
 
-- [SharePoint app catalog](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Sideloading apps in Teams enabled](https://docs.microsoft.com/sharepoint/dev/spfx/integrate-with-teams-introduction#turn-on-side-loading-of-external-apps-in-teams)
+- [SharePoint app catalog](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant?WT.mc_id=m365-0000-wmastyka)
+- [Sideloading apps in Teams enabled](https://docs.microsoft.com/sharepoint/dev/spfx/integrate-with-teams-introduction?WT.mc_id=m365-0000-wmastyka#turn-on-side-loading-of-external-apps-in-teams)
 
 ## Repro steps
 
@@ -15,7 +15,7 @@ Solution to repro the issue with using SharePoint Framework solutions as Teams m
     1. Go to SharePoint app catalog
     1. From the `sharepoint/solution` folder, upload the `spfx-teams-meetings.sppkg` file to SharePoint app catalog and deploy the package globally
 1. Deploy the Teams app
-    1. Go to Teams @ [https://teams.microsoft.com](https://teams.microsoft.com)
+    1. Go to Teams @ [https://teams.microsoft.com/?WT.mc_id=m365-0000-wmastyka](https://teams.microsoft.com/?WT.mc_id=m365-0000-wmastyka)
     1. From the left rail, choose **Apps**
     1. From the menu, choose **Upload a customized app** and then **Upload for Contoso**
     1. In the file dialog, from the `teams` folder, select the `spfx-teams-meetings.zip` file
@@ -40,4 +40,4 @@ Solution to repro the issue with using SharePoint Framework solutions as Teams m
 
 ## Support in SPFx
 
-When building meetings app in SPFx, it would be helpful to expose the [meetings context information](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/create-apps-for-teams-meetings?tabs=dotnet#meeting-apps-api-reference) through SPFx to use the existing infrastructure (permission requests and service principal to connect to Graph) to simplify the process of building these apps and not require server-side components like bots.
+When building meetings app in SPFx, it would be helpful to expose the [meetings context information](https://docs.microsoft.com/microsoftteams/platform/apps-in-teams-meetings/create-apps-for-teams-meetings?tabs=dotnet&WT.mc_id=m365-0000-wmastyka#meeting-apps-api-reference) through SPFx to use the existing infrastructure (permission requests and service principal to connect to Graph) to simplify the process of building these apps and not require server-side components like bots.
